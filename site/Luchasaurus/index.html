@@ -98,17 +98,22 @@ body {
 	text-decoration: #40ff40 wavy underline;
 	border-radius: 10px;
 } 
-	
-#textbox:hover{
-	height: 400px;
 
-}
+@media (min-width: 1001px)
+{	
+	#textbox:hover{
+			height: 400px;
+		}
 
-#textbox:hover>.morearrow {
-	visibility: hidden;
+	#textbox:hover>.morearrow {
+			visibility: hidden;
+	}
 }
 
 @media (max-width: 1000px){
+	.morearrow{
+		visibility: hidden;
+	}
   #jungleback{
   width: 100%;
   vertical-align: center;
@@ -119,10 +124,12 @@ body {
 		width: inherit;
 	}
 	#textbox{
-		top:  50%;
+		top:  40%;
 		left: 0px;
 		max-width: 100%;
 		width: inherit;
+		font-size: 2em;
+		height: 50%;
 	}
     
 }
